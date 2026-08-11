@@ -14,10 +14,4 @@ public class EmployeeController {
     public Employees getAllEmployees() {
         return employeeManager.getEmployees();
     }
-
-    @PostMapping("/employees")
-    public Employees addEmployee(@RequestBody Employee employee) {
-        employeeManager.addEmployee(employee);
-        return employeeManager.getEmployees();
-    }
 }
